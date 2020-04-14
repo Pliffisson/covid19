@@ -1,5 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
+// import Cards from "./components/Cards/Cards";
+// import Chart from "./components/Chart/Chart";
+// import CountyPicker from "./components/CountryPicker/CountyPicker";
 
-export default function App() {
-  return <h1>Seja bem vindo React</h1>;
+import { Cards, Chart, CountyPicker } from "./components";
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Cards />
+        <Chart />
+        <CountyPicker />
+      </div>
+    );
+  }
 }

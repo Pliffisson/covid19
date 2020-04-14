@@ -1,9 +1,5 @@
 import React, { Component } from "react";
-// import Cards from "./components/Cards/Cards";
-// import Chart from "./components/Chart/Chart";
-// import CountyPicker from "./components/CountryPicker/CountyPicker";
-
-import { Cards, Chart, CountyPicker } from "./components";
+import { Cards, Chart, CountryPicker } from "./components";
 
 export default class App extends Component {
   render() {
@@ -11,7 +7,7 @@ export default class App extends Component {
       <div>
         <Cards />
         <Chart />
-        <CountyPicker />
+        <CountryPicker />
       </div>
     );
   }

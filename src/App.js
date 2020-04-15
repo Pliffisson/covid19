@@ -15,9 +15,11 @@ export default class App extends Component {
   }
 
   render() {
+
+    const { data } = this.data
     return (
       <div className={styles.container}>
-        <Cards />
+        <Cards data={data} />
         <Chart />
         <CountryPicker />
       </div>
